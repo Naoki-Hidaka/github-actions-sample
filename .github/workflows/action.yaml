@@ -4,7 +4,7 @@ on:
 
 jobs:
   create-pull-request:
-    if: startsWith(github.event.ref, 'refs/head/app')
+    if: startsWith(github.event.ref, 'refs/heads/app')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
